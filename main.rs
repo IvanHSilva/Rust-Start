@@ -1,5 +1,9 @@
+use utils::terminal::show_menu;
+
 mod utils;
 
+
 fn main() {
-    println!("Hello, world!");
+    let items = ["Fundamentos", "Tipos", "Controle", "Funções", "Ownership"];
+    show_menu("Principal", &items, true);
 }
