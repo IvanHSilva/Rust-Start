@@ -1,9 +1,9 @@
-use utils::terminal::show_menu;
+use utils::terminal::{show_menu, wait_return};
 
 mod utils;
 
-
 fn main() {
     let items = ["Fundamentos", "Tipos", "Controle", "Funções", "Ownership"];
-    show_menu("Principal", &items, true);
+    let selected = show_menu("Principal", &items, true);
+    wait_return();
 }
